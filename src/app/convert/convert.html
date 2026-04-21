@@ -1,1 +1,17 @@
-<p>convert works!</p>
+<h2>Konvertering</h2>
+
+<h3>Meter till Feet</h3>
+
+<input type="number" [(ngModel)]="meters" placeholder="Ange meter">
+<button (click)="convertMeters()">Konvertera</button>
+
+<p>Resultat: {{ feet }} feet</p>
+
+<hr>
+
+<h3>Celsius till Fahrenheit</h3>
+
+<input type="number" [(ngModel)]="celsius" placeholder="Ange celsius">
+<button (click)="convertCelsius()">Konvertera</button>
+
+<p>Resultat: {{ fahrenheit }} °F</p>
