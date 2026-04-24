@@ -1,59 +1,60 @@
-# AngularProjekt
+# Angular Webbapplikation
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+## Beskrivning
 
-## Development server
+Detta projekt är en webbapplikation byggd med Angular. Syftet med projektet är att skapa en dynamisk och responsiv webbplats med hjälp av Angulars komponentbaserade struktur, routing och databindning.
 
-To start a local development server, run:
+Webbplatsen innehåller flera undersidor och funktioner, inklusive en sida för konvertering av enheter. Projektet använder Angular CLI, komponenter, routing samt finns publicerad som en färdig webbapplikation.
 
-```bash
-ng serve
-```
+## Funktioner
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Startsida
+En enkel startsida med text och bild som introducerar webbplatsen.
 
-## Code scaffolding
+### Navigationsmeny
+En meny som gör det möjligt att navigera mellan olika undersidor med hjälp av Angulars router.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Konvertering av värden
+En sida där användaren kan:
+- Konvertera meter till feet
+- Konvertera feet till meter
+- Konvertera celsius till fahrenheit
+- Konvertera fahrenheit till celsius
 
-```bash
-ng generate component component-name
-```
+Detta är implementerat med hjälp av Angulars databindning.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### About-sida
+En sida som beskriver hur projektet har genomförts och vad som har lärts under arbetets gång.
 
-```bash
-ng generate --help
-```
+### Återanvändbar komponent
+En separat komponent används för navigationsmenyn och återanvänds i applikationen.
 
-## Building
+### Responsiv design
+Webbplatsen är anpassad för både dator och mobil genom användning av CSS och media queries.
 
-To build the project run:
+## Tekniker
 
-```bash
-ng build
-```
+- **Angular**
+- **TypeScript**
+- **HTML** 
+- **CSS**
+- **Angular Router**
+- **FormsModule**
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Komponentstruktur
+Projektet är uppdelat i flera komponenter:
+- Home
+- Convert
+- About
+- Header
 
-## Running unit tests
+Detta gör koden mer strukturerad och lättare att underhålla.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Publicering
 
-```bash
-ng test
-```
+Webbplatsen är publicerad via Netlify.
 
-## Running end-to-end tests
+För att Angulars routing ska fungera korrekt vid uppdatering av sidan (refresh) har en `_redirects`-fil lagts till. Denna ser till att alla anrop skickas till `index.html`, vilket gör att Angular kan hantera navigeringen korrekt.
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Demowebbplats:
+https://remarkable-tiramisu-7c9aed.netlify.app/
